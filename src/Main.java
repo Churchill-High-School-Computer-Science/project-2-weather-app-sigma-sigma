@@ -1,7 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        //TODO
+        WeatherAPI weather = new WeatherAPI();
+        GUI gui = new GUI(weather);
 
+        gui.createWindow();
+        gui.setUpButton();
+        gui.cyanBackground();
     }
 }
