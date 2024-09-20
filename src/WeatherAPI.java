@@ -48,11 +48,11 @@ public class WeatherAPI {
     // Function to get, format, and return weather data
     public String parseWeatherData(String blockOfText) {
 
-        String a = getCityName(blockOfText);
+        String a = getPressure(blockOfText);
         String b = getTemp(blockOfText);
         String c = getFeelsLike(blockOfText);
 
-        return a + b + c;
+        return "Humidity: " + a + "\nTemperature (in F): " + b + "\nFeels Like: " + c;
 
     }
 
